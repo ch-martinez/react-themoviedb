@@ -2,10 +2,14 @@ const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5Y2VjNTI0OGE3YTRhNjI5ZmEwNGNl
 const API_KEY = '9cec5248a7a4a629fa04ceccbd5a52ce'
 const IMAGE_PATH = ''
 
-export const API_URL = 'https://api.themoviedb.org/3'
-export const API_OPTIONS = {
+const API_URL = 'https://api.themoviedb.org/3'
+const API_OPTIONS = {
     headers: {
         accept: 'application/json',
         Authorization: `Bearer ${API_TOKEN}`
       }
+}
+
+export const getDataAPI = (path) => {
+    return fetch(API_URL+path, API_OPTIONS).then((res) => res.json())
 }
