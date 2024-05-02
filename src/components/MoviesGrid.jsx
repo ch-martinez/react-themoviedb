@@ -1,13 +1,27 @@
-import axios from 'axios'
+// import axios from 'axios'
 import { MovieCard } from './MovieCard'
-import { API_URL, API_OPTIONS } from "../utils/APIConnect"
+import { getDataAPI } from "../utils/APIConnect"
+import { useState, useEffect } from 'react'
 
 export const MoviesGrid = () => {
-    axios.get(API_URL+'/movie/popular', API_OPTIONS).then((res) => console.log(res.data.results))
+
+    const [movies, setMovies] = useState([])
+    useEffect(() => {
+        getDataAPI('/discover/movie').then((data) => {
+            setMovies(data.results)
+            console.log(data.results);
+        })
+    }, [])
+
     return(
         <>
             <h1>Grilla de peliculas</h1>
-            <MovieCard/>
+            <ul>
+                {movies.map((movie) => (
+                    <MovieCard key={movie.id} movie={movie}/>
+
+                ))}
+            </ul>
         </>
     )
 }
