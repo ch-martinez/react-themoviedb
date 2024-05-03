@@ -1,5 +1,6 @@
 /* import React from 'react' */
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Navbar } from './components/navbar'
 import { LandingPage } from './pages/LandingPage'
 import { MovieDetailPage } from './pages/MovieDetailPage'
 
@@ -8,9 +9,7 @@ export const App = () => {
         <BrowserRouter>
         <header>
             <section className='container'>
-                <Link to = '/'>
-                        <h1 className='title'>TheMovieDB</h1>
-                </Link>
+                <Navbar/>
             </section>
         </header>
         <body>
