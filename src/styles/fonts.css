@@ -78,21 +78,41 @@ h6{
     line-height: 16px;
     letter-spacing: 4%;
 }
+
+/* Links */
 .link-regular{
     font-weight: var(--semibold);
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 2%;
+    transition: color var(--tr-03);
+    cursor: pointer;
 }
 .link-small{
     font-weight: var(--semibold);
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 2%;
+    transition: color var(--tr-03);
+    cursor: pointer;
 }
 .link-extrasmall{
     font-weight: var(--semibold);
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2%;
+    transition: color var(--tr-03);
+    cursor: pointer;
+}
+
+.link{
+    color: var(--white-50);
+}
+
+    .link:hover{
+        color: var(--secondary-400);
+    }
+
+.link--selected{
+    color: var(--secondary-400);
 }
