@@ -1,6 +1,6 @@
 /* import React from 'react' */
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Navbar } from './components/navbar'
+import { Navbar } from './components/Navbar'
 import { LandingPage } from './pages/LandingPage'
 import { MovieDetailPage } from './pages/MovieDetailPage'
 
