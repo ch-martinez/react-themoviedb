@@ -10,15 +10,3 @@
     align-items: end;
     gap: var(--spacing-16);
 }
-
-.posts-header__link{
-    transition: color var(--tr-03);
-}
-
-    .posts-header__link:hover{
-        color: var(--primary-300);
-    }
-
-.posts-header__link--selected{
-    color: var(--primary-500);
-}
