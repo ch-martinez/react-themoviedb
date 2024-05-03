@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Con esto se evita que haya contenido vacío cuando se achica el zoom del 
+   navegador */
+/* body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+} */
+
+main{
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    display: inline-block;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+
+ul, ol {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}

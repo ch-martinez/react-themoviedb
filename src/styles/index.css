@@ -1,0 +1,23 @@
+@import url('imports.css');
+
+body{
+    font-family: var(--font-base);
+    background-color: var(--color-bg);
+    color: var(--white-100);
+}
+
+.container-main{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.posts-grid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
