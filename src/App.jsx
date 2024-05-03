@@ -7,14 +7,20 @@ export const App = () => {
     return(
         <BrowserRouter>
         <header>
-            <Link to = '/'>
-                    <h1 className='title'>Peliculas</h1>
-            </Link>
+            <section className='container'>
+                <Link to = '/'>
+                        <h1 className='title'>TheMovieDB</h1>
+                </Link>
+            </section>
         </header>
-            <Routes>
-                <Route path='/' element={<LandingPage/>} />
-                <Route path='/movie/:movie_id' element={<MovieDetailPage/>} />
-            </Routes>
+        <body>
+            <section className='container'>
+                <Routes>
+                    <Route path='/' element={<LandingPage/>} />
+                    <Route path='/movie/:movie_id' element={<MovieDetailPage/>} />
+                </Routes>
+            </section>
+        </body>
         </BrowserRouter>
     )
 }

@@ -6,18 +6,14 @@ body{
     color: var(--white-100);
 }
 
-.container-main{
+.container{
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    max-width: 1400px;
 }
 
 .posts-grid{
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    gap: var(--spacing-32);
     flex-wrap: wrap;
 }
