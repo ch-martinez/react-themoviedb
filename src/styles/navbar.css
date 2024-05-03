@@ -1,0 +1,24 @@
+.navbar{
+    padding: var(--spacing-16) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    gap: var(--spacing-16);
+}
+
+    .navbar__logo img{
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+.navbar__links{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-16);
+}
