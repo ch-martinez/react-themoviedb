@@ -1,9 +1,11 @@
-import { MoviesGrid } from "../components/MoviesGrid"
+import { PostsGrid } from "../components/PostsGrid"
+import { PostsHeader } from "../components/PostsHeader"
 
 export const LandingPage = () => {
     return(
         <>
-            <MoviesGrid/>
+            <PostsHeader/>
+            <PostsGrid/>
         </>
     )
 }

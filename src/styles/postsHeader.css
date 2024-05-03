@@ -1,0 +1,12 @@
+.posts-header{
+    width: 100%;
+    margin-bottom: var(--spacing-32);
+    display: flex;
+    gap: var(--spacing-32);
+}
+
+.posts-header__links-container{
+    display: flex;
+    align-items: end;
+    gap: var(--spacing-16);
+}

@@ -1,0 +1,19 @@
+@import url('imports.css');
+
+body{
+    font-family: var(--font-base);
+    background-color: var(--color-bg);
+    color: var(--white-100);
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.posts-grid{
+    width: 100%;
+    display: flex;
+    gap: var(--spacing-32);
+    flex-wrap: wrap;
+}
